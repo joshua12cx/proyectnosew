@@ -15,20 +15,20 @@ export class ListaEmpleadosComponent implements OnInit {
 
  ngOnInit(): void {
   this.obterEmpleados();
-  //  this.empleados = [{ 
-  //   "id": 1,
-  //   "nombre": "Cristian",
-  //   "apellido":"Ramirez",
-  //   "email":"joshua@gmail.com"
+   this.empleados = [{ 
+    "id": 1,
+    "nombre": "Cristian",
+    "apellido":"Ramirez",
+    "email":"joshua@gmail.com"
 
-  //  },
-  //  {
-  //   "id": 2,
-  //   "nombre": "Gabriel",
-  //   "apellido":"Ramirez",
-  //   "email":"gabriel20@gmail.com"
-  //  }
-  //];
+   },
+   {
+    "id": 2,
+    "nombre": "Gabriel",
+    "apellido":"Ramirez",
+    "email":"gabriel20@gmail.com"
+   }
+  ];
  }
 
  // en el bakend no olvides que tienes que poner @CrossOrigin(origins = "http://localhost:4200")
