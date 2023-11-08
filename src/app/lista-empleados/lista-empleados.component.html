@@ -2,19 +2,25 @@
 <table class="table table-striped">
 <thead class="table-dark">
     <tr>
+        <th>ID</th>
         <th>Nombre</th>
         <th>Apellido</th>
         <th>Email</th>
+        <th>Acciones</th>
 
     </tr>
 
 </thead>
 <tbody>
-    <tr *ngFor="let empleado of empleados">
+    <tr *ngFor="let empleado of empleado">
+        <td>{{empleado.id}}</td>
      <td>{{empleado.nombre}}</td>
      <td>{{empleado.apellido}}</td>
      <td>{{empleado.email}}</td>
     
+     <button (click) ="actualizarEmpleado(empleado.id)" class="btn btn-info">Editar</button>
+     <button (click) ="eliminarEmpleado(empleado.id)" class="btn btn-info" style="margin-left:10px ;">Eliminar</button>
+     <button (click) ="verDetallesDelEmpleado(empleado.id)" class="btn btn-info" style="margin-left:10px ;">Detalles</button>
 
     </tr>
 
